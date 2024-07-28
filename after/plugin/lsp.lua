@@ -31,16 +31,10 @@ require('mason-lspconfig').setup({
     },
     handlers = {
         function(server_name)
-            local opts = {
+            require('lspconfig')[server_name].setup({
                 capabilities = require('cmp_nvim_lsp').default_capabilities(),
                 on_attach = lsp_zero.on_attach,
-            }
-
-            if server_name == 'clangd' then
-                opts.cmd = {"clangd", "--fallback-style=webkit"}
-            end
-
-            require('lspconfig')[server_name].setup(opts)
+            })
         end,
     },
 })
