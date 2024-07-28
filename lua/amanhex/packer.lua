@@ -20,6 +20,19 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  use({
+	  'sho-87/kanagawa-paper',
+	  as = 'kanagawa-paper',
+	  config = function()
+		  vim.cmd('colorscheme kanagawa-paper')
+	  end
+  })
+
+  use {
+      "rockyzhang24/arctic.nvim",
+      requires = { "rktjmp/lush.nvim" }
+  }
+
   use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use( 'nvim-treesitter/playground')
   use( 'tpope/vim-fugitive')
