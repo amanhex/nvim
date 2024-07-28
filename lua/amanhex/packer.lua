@@ -48,6 +48,16 @@ return require('packer').startup(function(use)
   use ("xiyaowong/transparent.nvim")
 
   use {
+      'lewis6991/gitsigns.nvim',
+      requires = {
+          'nvim-lua/plenary.nvim'
+      },
+      config = function()
+          require('gitsigns').setup()
+      end
+  }
+
+  use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
 	  requires = {
