@@ -14,6 +14,3 @@ vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = t
 
 -- Key mapping to go to the previous buffer
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious<CR>', { noremap = true, silent = true })
-
---Key mapping to close a buffer
-vim.api.nvim_set_keymap('n', '<leader>x', ':bd<CR>', {noremap = true, silent = true})
