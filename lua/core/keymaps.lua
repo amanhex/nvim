@@ -9,6 +9,7 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fb", ":Telescope file_browser<CR>")
 vim.keymap.set('n', '<leader>e', vim.cmd.NvimTreeToggle)
+vim.keymap.set('n', '<leader>E', vim.cmd.NvimTreeFocus)
 -- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.api.nvim_set_keymap("n", "<leader>1", "<cmd>1ToggleTerm<CR>", { noremap = true, silent = true })
