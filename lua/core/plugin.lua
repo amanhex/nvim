@@ -60,7 +60,13 @@ require("lazy").setup {
             vim.cmd("colorscheme arctic")
         end
     },
-    {'L3MON4D3/LuaSnip'}, 
+    {
+        'L3MON4D3/LuaSnip', 
+        dependencies = { 
+            "saadparwaiz1/cmp_luasnip",
+            "rafamadriz/friendly-snippets" 
+        },
+    }, 
     {
         'goolord/alpha-nvim',
         dependencies = {
@@ -68,7 +74,14 @@ require("lazy").setup {
             'nvim-lua/plenary.nvim'
         },
         config = function ()
-            require'alpha'.setup(require'alpha.themes.theta'.config)
+            require'alpha'.setup(require'plugins.alpha'.config)
         end
-    };
+    },
+    {
+        "windwp/nvim-ts-autotag",
+        config = function()
+            require('nvim-ts-autotag').setup()
+        end,
+    },
+    { "lewis6991/gitsigns.nvim" },
 }
