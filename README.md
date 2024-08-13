@@ -1,6 +1,6 @@
 # Neovim setup
 
-Custom Neovim setup configured using Lazy package manager
+Custom Neovim setup configured using Lazy plugin manager
 
 ## System dependencies
 
