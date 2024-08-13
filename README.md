@@ -40,23 +40,23 @@ nvim
 | Keys       | Mode          | Description                 |
 | ---------- | ------------- | --------------------------- |
 | ;          | Normal        | Command mode                |
-| <leader>q  | Normal        | Quit Neovim                 |
-| <leader>w  | Normal        | Save current file           |
-| <leader>ff | Normal        | Find files using Telescope  |
-| <leader>fg | Normal        | Live grep using Telescope   |
-| <leader>fb | Normal        | Open Telescope file browser |
-| <leader>e  | Normal        | Toggle Nvim Tree            |
-| <leader>E  | Normal        | Focus Nvim Tree             |
-| <leader>1  | Normal        | Open first terminal         |
-| <leader>2  | Normal        | Open second terminal        |
-| <C-\|>     | Normal/Insert | Toggle terminal             |
-| <leader>/  | Normal/Visual | Toggle comments             |
+| leader+q   | Normal        | Quit Neovim                 |
+| leader+w   | Normal        | Save current file           |
+| leader+ff  | Normal        | Find files using Telescope  |
+| leader+fg  | Normal        | Live grep using Telescope   |
+| leader+fb  | Normal        | Open Telescope file browser |
+| leader+e   | Normal        | Toggle Nvim Tree            |
+| leader+E   | Normal        | Focus Nvim Tree             |
+| leader+1   | Normal        | Open first terminal         |
+| leader+2   | Normal        | Open second terminal        |
+| ctrl+|     | Normal/Insert | Toggle terminal             |
+| leader+/   | Normal/Visual | Toggle comments             |
 | jk         | Insert        | Exit insert mode            |
-| <leader>vs | Normal        | Vertical Split              |
-| <leader>hs | Normal        | Horizontal Split            |
-| <Tab>      | Normal        | Cycle forward buffers       |
-| <S-Tab>    | Normal        | Cycle backward buffers      |
-| <leader>x  | Normal        | Close current buffer        |
+| leader+vs  | Normal        | Vertical Split              |
+| leader+hs  | Normal        | Horizontal Split            |
+| Tab        | Normal        | Cycle forward buffers       |
+| S-Tab      | Normal        | Cycle backward buffers      |
+| leader+x   | Normal        | Close current buffer        |
 
 ## Additional Configuration 
 
