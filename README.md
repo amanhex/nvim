@@ -49,7 +49,7 @@ nvim
 | leader+E   | Normal        | Focus Nvim Tree             |
 | leader+1   | Normal        | Open first terminal         |
 | leader+2   | Normal        | Open second terminal        |
-| ctrl+|     | Normal/Insert | Toggle terminal             |
+| ctrl+\     | Normal/Insert | Toggle terminal             |
 | leader+/   | Normal/Visual | Toggle comments             |
 | jk         | Insert        | Exit insert mode            |
 | leader+vs  | Normal        | Vertical Split              |
