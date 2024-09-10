@@ -5,7 +5,7 @@
 --   vim.o.background = "dark"
 --   vim.cmd "colorscheme gruvbox"
 
-local ok, _ = pcall(vim.cmd, "colorscheme moonfly")
+local ok, _ = pcall(vim.cmd, "colorscheme no-clown-fiesta")
 if not ok then
     vim.cmd "colorscheme default" -- if the above fails, then use default
 end

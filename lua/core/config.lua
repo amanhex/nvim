@@ -14,7 +14,7 @@ opt.expandtab = true
 opt.autoindent = true
 opt.smartindent = true
 opt.cindent = true
-opt.wrap = false
+opt.wrap = true
 opt.clipboard = "unnamedplus"
 opt.termguicolors = true
 

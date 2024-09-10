@@ -120,4 +120,9 @@ require("lazy").setup {
         },
         config = true,
     },
+    { "aktersnurra/no-clown-fiesta.nvim" },
+    {
+        "jakobkhansen/journal.nvim",
+        config = function() require("journal").setup() end,
+    },
 }
