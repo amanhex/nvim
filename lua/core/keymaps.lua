@@ -1,5 +1,4 @@
 local builtin = require "telescope.builtin"
-vim.g.mapleader = " "
 
 vim.api.nvim_set_keymap("n", ";", ":", { noremap = true, silent = false })
 vim.keymap.set("n", "<leader>q", ":q<CR>")

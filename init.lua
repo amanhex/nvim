@@ -6,7 +6,6 @@ require "core.keymaps"
 
 -- Plugins
 require "plugins.lsp"
-require "plugins.mason"
 require "plugins.treesitter"
 require "plugins.pairs"
 require "plugins.telescope"

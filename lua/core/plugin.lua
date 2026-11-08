@@ -32,14 +32,16 @@ require("lazy").setup {
     { "hrsh7th/cmp-buffer" },
     { "hrsh7th/cmp-path" },
     { "hrsh7th/cmp-cmdline" },
-    "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
 
     "norcalli/nvim-colorizer.lua",
 
     "terrortylor/nvim-comment",
     "xiyaowong/transparent.nvim",
-    { "akinsho/toggleterm.nvim", version = "*", config = true },
+    { "akinsho/toggleterm.nvim", version = "*" },
     {
         "nvim-tree/nvim-tree.lua",
         version = "*",
@@ -47,7 +49,6 @@ require("lazy").setup {
         dependencies = {
             "nvim-tree/nvim-web-devicons",
         },
-        config = function() require("nvim-tree").setup {} end,
     },
     {
         "rockyzhang24/arctic.nvim",
@@ -78,7 +79,6 @@ require("lazy").setup {
     {
         "nvimdev/dashboard-nvim",
         event = "VimEnter",
-        config = function() require("dashboard").setup() end,
         dependencies = { { "nvim-tree/nvim-web-devicons" } },
     },
     {
@@ -108,7 +108,7 @@ require("lazy").setup {
             formatters_by_ft = {
                 lua = { "stylua" },
             },
-            format_on_save = true,
+            format_on_save = { timeout_ms = 500, lsp_format = "fallback" },
         },
     },
     {
@@ -118,7 +118,6 @@ require("lazy").setup {
             "nvim-tree/nvim-web-devicons", -- If you want devicons
             "stevearc/resession.nvim", -- Optional, for persistent history
         },
-        config = true,
     },
     { "aktersnurra/no-clown-fiesta.nvim" },
     {
